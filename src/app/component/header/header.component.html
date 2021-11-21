@@ -1,6 +1,7 @@
-<header>
-    <div class="navbar navbar-dark bg-primary shadow-sm">
-        <div class="navbar-brand align-item-center d-flex">
+<header class="container-fluid">
+    <div class="navbar navbar-dark bg-primary shadow-sm row">
+        
+        <div class="navbar-brand align-item-center col-md-2">
             <div class="brand" routerLink= "products">
                 <i style="font-size: 40px;" class="fas fa-shipping-fast">
                     &nbsp; 
@@ -8,19 +9,25 @@
     
                 <strong style="font-size: 30px;">Flipkart</strong>
             </div>
-
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="search product">
-            </div>
-
-            <span class="fas fa-search search-icon"></span>
         </div>
 
-        <button class="btn btn-primary" routerLink="cart">
-            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
-            <div style="font-size: 10px;" class="badge bg-danger">{{ totalItem }}</div>
-        </button>
+        <div class="col-md-9">
+           <div class="row">
+            <div class="form-group col-10">
+                <input type="text" class="form-control" placeholder="search product">
+                <span class="fas fa-search search-icon"></span>
+            </div>
+    
+            <div class="col-1">
+                <button class="btn btn-primary" routerLink="cart">
+                    <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+                    <span style="font-size: 10px;" class="badge bg-danger">{{ totalItem }}</span>
+                </button>
+            </div>  
 
-        
+           </div>
+                
+        </div>
+          
     </div>
 </header>
